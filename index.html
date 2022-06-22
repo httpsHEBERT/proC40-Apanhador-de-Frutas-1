@@ -3,16 +3,19 @@
   <head>
     <script src="libraries/p5.js"></script>
     <script src="libraries/p5.dom.min.js"></script>
-    <script src="libraries/matter.js"></script>
     <script src="libraries/p5.play.js"></script>
 
     <script src="js/form.js"></script>
-    <script src="js/form.js"></script>
     <script src="js/game.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="js/player.js"></script>   
+  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
 
     <script>
+      // Your web app's Firebase configuration
       const firebaseConfig = {
         apiKey: "AIzaSyDmzJ-HMKxT7rKhXqwbSoXBVOe7Nw8lXX0",
         authDomain: "apanhador-de-frutas-d7646.firebaseapp.com",
@@ -25,8 +28,8 @@
 
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
-    </script>
-    
+    </script>    
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
   </head>
